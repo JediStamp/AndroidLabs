@@ -3,4 +3,9 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Bonjour Monde!</string>
     <string name="ButtonText">Je suis un anana</string>
+    <string name="checkBoxText">Check this out!</string>
+    <string name="textViewText">Regardez ma GUI</string>
+    <string name="mySwitch">Switch Ouvert / Fermer</string>
+    <string name="editText">Type Ici</string>
+    <string name="toast_message">Voici plus d\'information</string>
 </resources>
