@@ -5,7 +5,7 @@
     <string name="ButtonText">Je suis un anana</string>
     <string name="checkBoxText">Cocher ca!</string>
     <string name="textViewText">Regardez ma GUI</string>
-    <string name="mySwitch">L\'interrupteur est Ouvert / Etendu</string>
+    <string name="mySwitch">L\'interrupteur est Allume / Etendu</string>
     <string name="editText">Ecrivez ici</string>
     <string name="toast_message">Voici plus d\'informations</string>
     <string name="snack_check">"Case a cocher est maintenant "</string>
