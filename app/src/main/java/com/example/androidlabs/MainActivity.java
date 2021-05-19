@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.activity_main_relative);
+//        setContentView(R.layout.activity_main_linear);
+//        setContentView(R.layout.activity_main_grid);
 
         // Text Boxes
         TextView viewText;
@@ -43,16 +45,16 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkName;
         checkName = findViewById(R.id.checkBox);
         checkName.setOnCheckedChangeListener(( cb,  b) -> {
-            Snackbar.make(editName,"Checkbox is now " + b, Snackbar.LENGTH_LONG)
-                    .setAction("Undo", click-> cb.setChecked( !b ))
+            Snackbar.make(editName,getResources().getString(R.string.snack_switch) + b, Snackbar.LENGTH_LONG)
+                    .setAction(getResources().getString(R.string.undo), click-> cb.setChecked( !b ))
                     .show();
         });
 
         Switch mySwitch;
         mySwitch = findViewById(R.id.switch1);
         mySwitch.setOnCheckedChangeListener(( sw,  b) -> {
-            Snackbar.make(editName,"Switch is now " + b, Snackbar.LENGTH_LONG)
-                    .setAction("Undo", click-> sw.setChecked( !b ))
+            Snackbar.make(editName,getResources().getString(R.string.snack_check) + b, Snackbar.LENGTH_LONG)
+                    .setAction(getResources().getString(R.string.undo), click-> sw.setChecked( !b ))
                     .show();
         });
     }

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:rowCount="4"
     android:columnCount="2" >
-
+    <!--Row 1-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -13,9 +13,11 @@
         android:textSize="30dp"
         android:layout_columnSpan="2" />
 
+    <!--Row 2-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/ButtonText" />
@@ -23,25 +25,29 @@
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
-        android:layout_gravity="fill"
         android:layout_weight="1"
         android:text="@string/checkBoxText" />
 
+    <!--Row 3-->
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/flag" />
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/mySwitch" />
 
+    <!--Row 4-->
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"

@@ -16,6 +16,8 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
+        android:layout_alignStart="@id/imageButton"
+        android:layout_alignEnd="@id/imageButton"
         android:layout_height="wrap_content"
         android:text="@string/ButtonText"
         android:layout_below="@id/textView" />
@@ -23,6 +25,7 @@
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_height="wrap_content"
         android:text="@string/checkBoxText"
         android:layout_below="@id/textView"
@@ -41,6 +44,7 @@
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_height="wrap_content"
         android:text="@string/mySwitch"
         android:layout_alignTop="@id/imageButton"

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Android Labs</string>
-    <string name="hello_message">Bonjour Monde!</string>
+    <string name="hello_message">Bonjour tout le monde!</string>
     <string name="ButtonText">Je suis un anana</string>
-    <string name="checkBoxText">Check this out!</string>
+    <string name="checkBoxText">Cocher ca!</string>
     <string name="textViewText">Regardez ma GUI</string>
-    <string name="mySwitch">Switch Ouvert / Fermer</string>
-    <string name="editText">Type Ici</string>
-    <string name="toast_message">Voici plus d\'information</string>
+    <string name="mySwitch">L\'interrupteur est Ouvert / Etendu</string>
+    <string name="editText">Ecrivez ici</string>
+    <string name="toast_message">Voici plus d\'informations</string>
+    <string name="snack_check">"Case a cocher est maintenant "</string>
+    <string name="snack_switch">"L\'interrupteur est maintenant "</string>
+    <string name="undo">Annuler</string>
 </resources>

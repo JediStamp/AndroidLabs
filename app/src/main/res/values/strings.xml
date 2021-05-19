@@ -7,4 +7,7 @@
     <string name="mySwitch">Switch on / off</string>
     <string name="editText">Type Here</string>
     <string name="toast_message">Here is more information</string>
+    <string name="snack_check">"Checkbox is now "</string>
+    <string name="snack_switch">"Switch is now "</string>
+    <string name="undo">Undo</string>
 </resources>
