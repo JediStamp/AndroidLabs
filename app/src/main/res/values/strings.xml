@@ -9,5 +9,8 @@
     <string name="toast_message">Here is more information</string>
     <string name="snack_check">"Checkbox is now "</string>
     <string name="snack_switch">"Switch is now "</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="flag_text">Canadian Flag</string>
     <string name="undo">Undo</string>
 </resources>

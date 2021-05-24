@@ -10,5 +10,8 @@
     <string name="toast_message">Voici plus d\'informations</string>
     <string name="snack_check">"Case a cocher est maintenant "</string>
     <string name="snack_switch">"L\'interrupteur est maintenant "</string>
+    <string name="on">ouvert</string>
+    <string name="off">fermer</string>
+    <string name="flag_text">Drapeaux Francais</string>
     <string name="undo">Annuler</string>
 </resources>

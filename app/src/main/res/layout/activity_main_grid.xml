@@ -17,9 +17,8 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/ButtonText" />
 
     <CheckBox
@@ -27,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/checkBoxText" />
 
     <!--Row 3-->
@@ -36,15 +34,14 @@
         android:layout_width="wrap_content"
         android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/flag" />
+        android:src="@drawable/flag"
+        android:contentDescription="@string/flag_text"/>
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="0dp"
         android:layout_gravity="fill_horizontal"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/mySwitch" />
 
     <!--Row 4-->

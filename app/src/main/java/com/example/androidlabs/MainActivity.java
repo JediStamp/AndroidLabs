@@ -3,14 +3,14 @@ package com.example.androidlabs;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
+//import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
+//import android.widget.ImageButton;
+//import android.widget.LinearLayout;
 import android.widget.Switch;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main_grid);
 
         // Text Boxes
-        TextView viewText;
-        viewText = findViewById(R.id.textView);
+//        TextView viewText;
+//        viewText = findViewById(R.id.textView);
 
         EditText editName;
         editName = findViewById(R.id.editText);
@@ -34,18 +34,28 @@ public class MainActivity extends AppCompatActivity {
         // Buttons
         Button buttonName;
         buttonName = findViewById(R.id.button);
-        buttonName.setOnClickListener((v) ->  {
-            Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_message), Toast.LENGTH_LONG).show();
-        });
+        buttonName.setOnClickListener(
+                (v) -> Toast.makeText(
+                        MainActivity.this,
+                        getResources().getString(R.string.toast_message),
+                        Toast.LENGTH_LONG).show()
+        );
 
-        ImageButton buttonImg;
-        buttonImg = findViewById(R.id.imageButton);
+//        ImageButton buttonImg;
+//        buttonImg = findViewById(R.id.imageButton);
 
         // Checkbox and Switch
         CheckBox checkName;
         checkName = findViewById(R.id.checkBox);
         checkName.setOnCheckedChangeListener(( cb,  b) -> {
-            Snackbar.make(editName,getResources().getString(R.string.snack_switch) + b, Snackbar.LENGTH_LONG)
+            String msg = getResources().getString(R.string.snack_switch);
+            if (b) {
+                msg += getResources().getString(R.string.on);
+            }else {
+                msg += getResources().getString(R.string.off);
+            }
+
+            Snackbar.make(editName, msg, Snackbar.LENGTH_LONG)
                     .setAction(getResources().getString(R.string.undo), click-> cb.setChecked( !b ))
                     .show();
         });
@@ -53,7 +63,13 @@ public class MainActivity extends AppCompatActivity {
         Switch mySwitch;
         mySwitch = findViewById(R.id.switch1);
         mySwitch.setOnCheckedChangeListener(( sw,  b) -> {
-            Snackbar.make(editName,getResources().getString(R.string.snack_check) + b, Snackbar.LENGTH_LONG)
+            String msg = getResources().getString(R.string.snack_check);
+            if (b) {
+                msg += getResources().getString(R.string.on);
+            }else {
+                msg += getResources().getString(R.string.off);
+            }
+            Snackbar.make(editName, msg, Snackbar.LENGTH_LONG)
                     .setAction(getResources().getString(R.string.undo), click-> sw.setChecked( !b ))
                     .show();
         });
