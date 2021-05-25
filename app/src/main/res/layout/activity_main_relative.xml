@@ -15,6 +15,7 @@
     <!--Row 2-->
     <Button
         android:id="@+id/button"
+        android:backgroundTint="@color/grey"
         android:layout_width="wrap_content"
         android:layout_alignStart="@id/imageButton"
         android:layout_alignEnd="@id/imageButton"
@@ -29,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="@string/checkBoxText"
         android:layout_below="@id/textView"
-        android:layout_alignLeft="@id/switch1"
+        android:layout_alignStart="@id/switch1"
         />
 
     <!--Row 3-->
@@ -38,8 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/button"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/flag" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/flag"
+        android:contentDescription="@string/flag_text"/>
+
 
     <Switch
         android:id="@+id/switch1"
@@ -48,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="@string/mySwitch"
         android:layout_alignTop="@id/imageButton"
-        android:layout_toRightOf="@id/imageButton" />
+        android:layout_toEndOf="@id/imageButton" />
 
     <!--Row 4-->
     <EditText
