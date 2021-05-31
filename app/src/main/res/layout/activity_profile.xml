@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tView2Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_profile"
+ />
+
+    <TextView
+        android:id="@+id/tView2Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_name"
+ />
+
+    <EditText
+        android:id="@+id/editT2Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="@string/enter_your_name"/>
+
+    <TextView
+        android:id="@+id/tView2Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_email"
+ />
+
+    <EditText
+        android:id="@+id/editT2Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="@string/enter_your_email"/>
+
+    <TextView
+        android:id="@+id/tView2Picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_picture"
+    />
+
+    <ImageButton
+        android:id="@+id/imgButton2Photo"
+        android:src="@android:drawable/picture_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tView2Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tView2Click"
+        />
+</LinearLayout>

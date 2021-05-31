@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
+    <string name="app_name">Laboratoire Android</string>
     <string name="hello_message">Bonjour tout le monde!</string>
     <string name="ButtonText">Je suis un anana</string>
     <string name="checkBoxText">Cocher ca!</string>
@@ -14,4 +14,15 @@
     <string name="off">fermer</string>
     <string name="flag_text">Drapeaux Francais</string>
     <string name="undo">Annuler</string>
+    <string name="textViewEmailString">Entrez votre courreil:</string>
+    <string name="editTextEmailString">Ecrivez le courreil ici</string>
+    <string name="textViewPWDString">Ecrivez votre mot de pass:</string>
+    <string name="ButtonLoginText">CONNEXION</string>
+    <string name="your_profile">Votre Profil</string>
+    <string name="your_name">Votre Nom:</string>
+    <string name="enter_your_name">Ecrivez votre Nom</string>
+    <string name="your_email">Votre Courriel:</string>
+    <string name="enter_your_email">Entrez votre courriel</string>
+    <string name="your_picture">Votre Photo:</string>
+    <string name="tView2Click">Clickez le bouton en haut pour apprendre un photo</string>
 </resources>
