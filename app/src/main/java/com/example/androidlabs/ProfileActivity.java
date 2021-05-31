@@ -3,17 +3,22 @@ package com.example.androidlabs;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class ProfileActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";
+    SharedPreferences prefs;
     ImageButton imgButton;
+    EditText editTextEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         imgButton = findViewById(R.id.imgButton2Photo);
         imgButton.setOnClickListener(v -> dispatchTakePictureIntent());
+
+        editTextEmail = findViewById(R.id.editT2Email);
+        prefs = getSharedPreferences("FileName", Context.MODE_PRIVATE);
+        String savedEmail = prefs.getString("Email", "");
+        editTextEmail.setText(savedEmail);
 
         Log.e(ACTIVITY_NAME,"In function: OnCreate()" );
 
