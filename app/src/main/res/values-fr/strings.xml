@@ -25,4 +25,10 @@
     <string name="enter_your_email">Entrez votre courriel</string>
     <string name="your_picture">Votre Photo:</string>
     <string name="tView2Click">Clickez le bouton en haut pour apprendre un photo</string>
+    <string name="goToChat">Va au Discussion</string>
+    <string name="sendButton">Envoyer</string>
+    <string name="rxButton">Recevoir</string>
+    <string name="chatText"></string>
+    <string name="chatHint">Ecrivez ici</string>
+    <string name="tViewString">chatty text</string>
 </resources>

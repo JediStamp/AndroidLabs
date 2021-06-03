@@ -24,4 +24,10 @@
     <string name="enter_your_email">Enter Your email</string>
     <string name="your_picture">Your Picture:</string>
     <string name="tView2Click">Click the button above to take a picture</string>
+    <string name="goToChat">Go to Chat</string>
+    <string name="sendButton">Send</string>
+    <string name="rxButton">Receive</string>
+    <string name="chatText"></string>
+    <string name="chatHint">Type Here</string>
+    <string name="tViewString">chatty text</string>
 </resources>

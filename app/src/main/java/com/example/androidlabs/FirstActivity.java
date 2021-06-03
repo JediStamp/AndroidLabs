@@ -45,12 +45,9 @@ public class FirstActivity extends AppCompatActivity {
         saveSharedPrefs(editTextEmail.getText().toString());
     }
 
-    private void saveSharedPrefs(String stringToSave)
-    {
+    private void saveSharedPrefs(String stringToSave) {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("Email", stringToSave);
         editor.commit();
     }
-
-
 }

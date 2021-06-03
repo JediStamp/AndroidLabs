@@ -59,4 +59,10 @@
         android:layout_height="wrap_content"
         android:text="@string/tView2Click"
         />
+
+    <Button
+        android:id="@+id/v2chatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/goToChat" />
 </LinearLayout>
