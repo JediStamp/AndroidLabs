@@ -16,7 +16,9 @@
         android:id="@+id/textGoesHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="fill_horizontal"
-        android:text="@string/tViewString"
+        android:layout_gravity="start"
+        android:background="@drawable/homer_speech"
+        android:layout_marginStart="5sp"
+        android:textAlignment="textStart"
         />
 </GridLayout>

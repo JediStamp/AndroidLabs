@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#8C8C8C</color>
+    <color name="homer_yellow">#FED90F</color>
+    <color name="homer_pl_yellow">#FFF3B3</color>
+    <color name="turtle_green">#8FD129</color>
+    <color name="turtle_pl_green">#d3eeaa</color>
 </resources>

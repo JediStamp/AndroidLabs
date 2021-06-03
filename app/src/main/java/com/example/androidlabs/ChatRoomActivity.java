@@ -2,6 +2,7 @@ package com.example.androidlabs;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,52 +13,47 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.ListAdapter;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ChatRoomActivity extends AppCompatActivity {
     private ArrayList<String> elements = new ArrayList<>();
     private MyListAdapter myAdapter;
-    private EditText myChat;
     private Message curMsg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_room);
 
-        // Create a List View
+        // Create a List View an make it clickable
         ListView myList = findViewById(R.id.theListView);
         myList.setAdapter(myAdapter = new MyListAdapter());
-        myList.setOnItemLongClickListener( (parent, view, position, id) -> {
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle("Do you want to delete this?")
+        myList.setOnItemLongClickListener(
+            (parent, view, position, id) -> {
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                alertDialogBuilder.setTitle(R.string.alert_title)
 
-                    //What is the message:
-                    .setMessage("The selected row is: " + position + "\n"
-                    + "The selected database is: " + id)
+                // Message
+                .setMessage(R.string.alert_msg1 + position + "\n"
+                + R.string.alert_msg2 + id)
 
-                    //what the Yes button does:
-                    .setPositiveButton("Yes", (click, arg) -> {
-                        elements.remove(position);
-                        myAdapter.notifyDataSetChanged();
-                    })
-                    //What the No button does:
-                    .setNegativeButton("No", (click, arg) -> { })
+                // Yes Action
+                .setPositiveButton(R.string.yes, (click, arg) -> {
+                    elements.remove(position);
+                    myAdapter.notifyDataSetChanged();
+                })
 
-                    //An optional third button:
-//                    .setNeutralButton("Maybe", (click, arg) -> {  })
+                // No action
+                .setNegativeButton(R.string.no, (click, arg) -> { })
 
-                    //You can add extra layout elements:
-//                    .setView(getLayoutInflater().inflate(R.layout.row_layout, null) )
-
-                    //Show the dialog
-                    .create().show();
-
-
-            return true;
+                //Show the dialog
+                .create().show();
+                return true;
         } );
+
+        //Whenever you swipe down on the list, do something:
+        SwipeRefreshLayout refresher = findViewById(R.id.refresher);
+        refresher.setOnRefreshListener( () -> refresher.setRefreshing(false)  );
 
         // Add chat text
         EditText myChat = findViewById(R.id.chatText);
