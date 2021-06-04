@@ -11,12 +11,13 @@
     <!--    Borders-->
     <stroke
         android:width="1dp"
-        android:color="@color/homer_yellow"
+        android:color="?attr/homer_border"
         />
+<!--    android:color="@color/homer_yellow"-->
 
     <!--    Background-->
     <solid
-        android:color="@color/homer_pl_yellow"
+        android:color="?attr/homer_background"
         />
 
 <!--    Padding-->

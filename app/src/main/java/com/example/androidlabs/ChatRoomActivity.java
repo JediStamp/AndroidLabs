@@ -31,11 +31,11 @@ public class ChatRoomActivity extends AppCompatActivity {
         myList.setOnItemLongClickListener(
             (parent, view, position, id) -> {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-                alertDialogBuilder.setTitle(R.string.alert_title)
+                alertDialogBuilder.setTitle(getResources().getString(R.string.alert_title))
 
                 // Message
-                .setMessage(R.string.alert_msg1 + position + "\n"
-                + R.string.alert_msg2 + id)
+                .setMessage(getResources().getString(R.string.alert_msg1) + position + "\n"
+                + getResources().getString(R.string.alert_msg2) + id)
 
                 // Yes Action
                 .setPositiveButton(R.string.yes, (click, arg) -> {

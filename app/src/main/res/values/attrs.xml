@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="homer_background" format="color"/>
+    <attr name="homer_border" format="color"/>
+    <attr name="turtle_background" format="color"/>
+    <attr name="turtle_border" format="color"/>
+</resources>

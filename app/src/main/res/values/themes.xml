@@ -12,5 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="homer_background">@color/homer_pl_yellow</item>
+        <item name="homer_border">@color/homer_yellow</item>
+        <item name="turtle_background">@color/turtle_pl_green</item>
+        <item name="turtle_border">@color/turtle_green</item>
+
     </style>
 </resources>

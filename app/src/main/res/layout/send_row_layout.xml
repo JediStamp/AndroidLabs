@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:background="@drawable/homer_speech"
+        android:textColor="@color/black"
         android:layout_marginStart="5sp"
         android:textAlignment="textStart"
         />

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:background="@drawable/turtle_speech"
+        android:textColor="@color/black"
         android:textAlignment="textEnd"
         android:layout_marginEnd="5sp"
         />
