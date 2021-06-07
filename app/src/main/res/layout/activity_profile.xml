@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:text="@string/enter_your_name"/>
+        android:hint="@string/enter_your_name"/>
 
     <TextView
         android:id="@+id/tView2Email"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:text="@string/enter_your_email"/>
+        android:hint="@string/enter_your_email"/>
 
     <TextView
         android:id="@+id/tView2Picture"
