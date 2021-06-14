@@ -1,6 +1,5 @@
 package com.example.androidlabs;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;

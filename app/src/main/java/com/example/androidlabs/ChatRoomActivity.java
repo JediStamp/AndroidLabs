@@ -2,14 +2,11 @@ package com.example.androidlabs;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,9 +18,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import java.util.ArrayList;
-
-import static android.database.DatabaseUtils.dumpCursor;
-import static android.database.DatabaseUtils.dumpCursorToString;
 
 public class ChatRoomActivity extends AppCompatActivity {
     public static final String ACTIVITY_NAME = "CHAT_ROOM_ACTIVITY";
@@ -201,11 +195,10 @@ public class ChatRoomActivity extends AppCompatActivity {
         // Creates a view object to go in a row of the listView
         @Override
         public View getView(int position, View old, ViewGroup parent) {
-            View newView = old;
             LayoutInflater inflater = getLayoutInflater();
 
             // make a new row
-            newView = inflater.inflate(elements.get(position).getLayout(), parent, false);
+            View newView = inflater.inflate(elements.get(position).getLayout(), parent, false);
 
             //set text for new row
             TextView tView = newView.findViewById(elements.get(position).getTextId());
