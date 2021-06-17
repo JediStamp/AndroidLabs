@@ -35,12 +35,17 @@ public class ProfileActivity extends AppCompatActivity {
 
         Log.e(ACTIVITY_NAME,"In function: OnCreate()" );
 
-        //Define Next Activity
+        //Define Next Activities
         Intent nextPage = new Intent(this, ChatRoomActivity.class);
+        Intent wxPage = new Intent(this, WeatherForcastActivity.class);
 
         // Got to Chat Activity
         Button toNextActivity = findViewById(R.id.v2chatButton);
         toNextActivity.setOnClickListener(click  -> startActivity( nextPage));
+
+        // Add weather button - Got to Weather Activity
+        Button wxButton = (Button)findViewById(R.id.weatherButton);
+        wxButton.setOnClickListener(click -> startActivity(wxPage));
     }
 
     private void dispatchTakePictureIntent() {

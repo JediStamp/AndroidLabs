@@ -34,4 +34,6 @@
     <string name="alert_msg2">"The selected database is: "</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="goToWeather">Go To Weather</string>
+    <string name="wxIco">none</string>
 </resources>
