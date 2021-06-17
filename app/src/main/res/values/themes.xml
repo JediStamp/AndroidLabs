@@ -16,6 +16,7 @@
         <item name="homer_border">@color/homer_yellow</item>
         <item name="turtle_background">@color/turtle_pl_green</item>
         <item name="turtle_border">@color/turtle_green</item>
-
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 </resources>
