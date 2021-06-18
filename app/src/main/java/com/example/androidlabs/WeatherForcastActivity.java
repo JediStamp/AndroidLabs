@@ -176,8 +176,6 @@ public class WeatherForcastActivity extends AppCompatActivity {
             catch (Exception e) {
                 Log.e("Error", e.getMessage());
             }
-
-
             return "Done";
         }
 
