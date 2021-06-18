@@ -87,13 +87,15 @@ public class WeatherForcastActivity extends AppCompatActivity {
                         //If you get here, then you are pointing at a start tag
                         if (xpp.getName().equals("temperature")) {
                             //If you get here, then you are pointing to a <Weather> start tag
-                            currTemp = xpp.getAttributeValue(null, "value");
+                            currTemp = xpp.getAttributeValue(null, "value") + " \u2103";
                             Log.i("ForecastQuery: ", "current temperature is " + currTemp);
                             publishProgress(25);
-                            minTemp = xpp.getAttributeValue(null, "min");
+                            minTemp = "Low: " + xpp.getAttributeValue(null, "min")
+                                    + " \u2103";
                             Log.i("ForecastQuery: ", "minimum temperature is " + minTemp);
                             publishProgress(50);
-                            maxTemp = xpp.getAttributeValue(null, "max");
+                            maxTemp = "High: " + xpp.getAttributeValue(null, "max")
+                                    + " \u2103";
                             Log.i("ForecastQuery: ", "maximum temperature is " + maxTemp);
                             publishProgress(75);
                         } else if(xpp.getName().equals("weather")){
@@ -168,7 +170,7 @@ public class WeatherForcastActivity extends AppCompatActivity {
                 JSONObject uvReport = new JSONObject(result);
 
                 //get the double associated with "value"
-                UVRating = String.valueOf(uvReport.getDouble("value"));
+                UVRating = "UV Index: " + (uvReport.getDouble("value"));
 
                 Log.i("MainActivity", "The uv is now: " + UVRating) ;
 
