@@ -2,6 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
     android:orientation="vertical">
 
     <TextView
@@ -15,6 +19,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:nextFocusDown="@id/editTextPWD"
+        android:nextFocusUp="@id/buttonLogin"
+        android:nextFocusRight="@id/editTextPWD"
+        android:nextFocusLeft="@id/buttonLogin"
         android:text="@string/editTextEmailString"/>
 
     <TextView
@@ -27,6 +35,10 @@
         android:id="@+id/editTextPWD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:nextFocusDown="@id/buttonLogin"
+        android:nextFocusUp="@id/editTextEmail"
+        android:nextFocusRight="@id/buttonLogin"
+        android:nextFocusLeft="@id/editTextEmail"
         android:inputType="textPassword"/>
 
     <Button
@@ -34,6 +46,10 @@
         android:backgroundTint="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:nextFocusDown="@id/buttonLogin"
+        android:nextFocusUp="@id/editTextPWD"
+        android:nextFocusRight="@id/buttonLogin"
+        android:nextFocusLeft="@id/editTextPWD"
         android:text="@string/ButtonLoginText" />
 
 </LinearLayout>
