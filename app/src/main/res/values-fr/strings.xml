@@ -28,7 +28,7 @@
     <string name="goToChat">Va au Discussion</string>
     <string name="sendButton">Envoyer</string>
     <string name="rxButton">Recevoir</string>
-    <string name="chatText"></string>
+    <string name="chatText">""</string>
     <string name="chatHint">Ecrivez ici</string>
     <string name="alert_title">Voulex vous effacer ca?</string>
     <string name="alert_msg1">"La linge choisi est: "</string>
@@ -36,4 +36,6 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="goToWeather">La Météo</string>
+    <string name="password">Mot de Passe</string>
+    <string name="image_taken_by_user">photo pris par toi</string>
 </resources>

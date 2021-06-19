@@ -27,7 +27,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class WeatherForcastActivity extends AppCompatActivity {
+public class WeatherForecastActivity extends AppCompatActivity {
     TextView currTV, minTV, maxTV, uvRate;
     ImageView wxIcon;
     ProgressBar pb;
@@ -35,8 +35,8 @@ public class WeatherForcastActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather_forcast);
-        pb = (ProgressBar)findViewById(R.id.progressBar);
+        setContentView(R.layout.activity_weather_forecast);
+        pb = findViewById(R.id.progressBar);
         pb.setVisibility(View.VISIBLE);
         pb.setProgress(0);
 
@@ -60,8 +60,7 @@ public class WeatherForcastActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... args) {
-            String wxPicName = null;
-            //Bitmap imageFile = null;
+            String wxPicName;
 
             try {
                 //create a URL object of what server to contact:
@@ -160,7 +159,7 @@ public class WeatherForcastActivity extends AppCompatActivity {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(response, "UTF-8"), 8);
                 StringBuilder sb = new StringBuilder();
 
-                String line = null;
+                String line;
                 while ((line = reader.readLine()) != null) {
                     sb.append(line + "\n");
                 }

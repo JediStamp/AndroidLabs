@@ -12,7 +12,6 @@
         android:name="android.software.leanback"
         android:required="true"/>
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,14 +19,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.AndroidLabs">
-        <activity android:name=".WeatherForcastActivity"></activity>
-        <activity android:name=".ChatRoomActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".FirstActivity">
+        android:theme="@style/Theme.AndroidLabs"
+        android:banner="@drawable/banner">
+        <activity android:name=".WeatherForecastActivity" />
+        <activity android:name=".ChatRoomActivity"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ProfileActivity"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".FirstActivity"
+                  android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

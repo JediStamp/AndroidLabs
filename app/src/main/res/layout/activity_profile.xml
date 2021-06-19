@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:autofillHints="Name"
         android:hint="@string/enter_your_name"/>
 
     <TextView
@@ -41,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:autofillHints="email"
         android:hint="@string/enter_your_email"/>
 
     <TextView
@@ -55,7 +57,7 @@
         android:src="@android:drawable/picture_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:contentDescription="@string/image_taken_by_user" />
 
     <TextView
         android:id="@+id/tView2Click"

@@ -189,7 +189,7 @@ public class ChatRoomActivity extends AppCompatActivity {
         // Returns the database ID of the object at position i
         @Override
         public long getItemId(int position) {
-            return (long) position;
+            return position;
         }
 
         // Creates a view object to go in a row of the listView

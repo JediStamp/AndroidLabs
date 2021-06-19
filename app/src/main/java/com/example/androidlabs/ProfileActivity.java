@@ -37,7 +37,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         //Define Next Activities
         Intent nextPage = new Intent(this, ChatRoomActivity.class);
-        Intent wxPage = new Intent(this, WeatherForcastActivity.class);
+        Intent wxPage = new Intent(this, WeatherForecastActivity.class);
 
         // Got to Chat Activity
         Button toNextActivity = findViewById(R.id.v2chatButton);
