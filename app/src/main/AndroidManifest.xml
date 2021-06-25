@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlabs">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -12,9 +14,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.AndroidLabs">
-        <activity android:name=".WeatherForcastActivity"></activity>
+        android:theme="@style/Theme.AndroidLabs"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EmptyActivity"></activity>
+        <activity android:name=".WeatherForcastActivity" />
         <activity android:name=".ChatRoomActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".FirstActivity">

@@ -36,4 +36,8 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="goToWeather">La Météo</string>
+    <string name="frag_msg">Message Ici</string>
+    <string name="frag_ID">ID=</string>
+    <string name="frag_isSend">est un message envoyer</string>
+    <string name="frag_hide">Cocher</string>
 </resources>

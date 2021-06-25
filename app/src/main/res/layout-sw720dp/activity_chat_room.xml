@@ -4,45 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/refresher"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/refresher"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
     <ListView
         android:id="@+id/theListView"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/chatGrid"/>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        android:layout_above="@id/sendButton"
+        >
 
-    <GridLayout
-        android:id="@+id/chatGrid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:rowCount="1"
-        android:columnCount="3" >
+    </ListView>
 
-        <Button
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    <FrameLayout
+        android:id="@+id/fragment_location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/theListView"
+        android:layout_alignParentRight="true"
+        ></FrameLayout>
+
+    <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
             android:text="@string/sendButton" />
+
         <EditText
             android:id="@+id/chatText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/sendButton"
+            android:layout_toLeftOf="@id/rxButton"
             android:hint="@string/chatHint"
             android:text="@string/chatText"/>
+
         <Button
             android:id="@+id/rxButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/theListView"
             android:text="@string/rxButton" />
-
-    </GridLayout>
-
 
 </RelativeLayout>
