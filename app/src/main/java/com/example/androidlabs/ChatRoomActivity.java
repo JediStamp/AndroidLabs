@@ -47,10 +47,6 @@ public class ChatRoomActivity extends AppCompatActivity {
         createListView();
         myAdapter.notifyDataSetChanged();
 
-//        // Whenever you swipe down on the list, do something:
-//        SwipeRefreshLayout refresher = findViewById(R.id.refresher);
-//        refresher.setOnRefreshListener(() -> refresher.setRefreshing(false));
-
         // Add chat text
         EditText myChat = findViewById(R.id.chatText);
 
@@ -115,6 +111,9 @@ public class ChatRoomActivity extends AppCompatActivity {
                                 deleteMessage(elements.get(position));
                                 elements.remove(position);
                                 myAdapter.notifyDataSetChanged();
+                                if (getSupportFragmentManager().findFragmentById(R.id.fragment_location) != null) {
+                                    this.getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.fragment_location)).commit();
+                                }
                             })
 
                             // No action
@@ -150,7 +149,6 @@ public class ChatRoomActivity extends AppCompatActivity {
                 nextActivity.putExtras(dataToPass); //send data to next activity
                 startActivity(nextActivity); //make the transition
             }
-
         });
     }
 
