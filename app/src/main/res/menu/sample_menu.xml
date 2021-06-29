@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Rebel"
+        android:id="@+id/itemRebel"
+        android:icon="@drawable/rebel"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Batman"
+        android:id="@+id/itemBatman"
+        android:icon="@drawable/batman"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Flash"
+        android:id="@+id/itemFlash"
+        android:icon="@drawable/flash"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Overflow"
+        android:id="@+id/item4"
+        android:icon="@drawable/cookie"
+        android:orderInCategory="4"
+        app:showAsAction="never"
+        />
+
+
+</menu>

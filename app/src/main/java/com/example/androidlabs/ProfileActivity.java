@@ -38,14 +38,19 @@ public class ProfileActivity extends AppCompatActivity {
         //Define Next Activities
         Intent nextPage = new Intent(this, ChatRoomActivity.class);
         Intent wxPage = new Intent(this, WeatherForcastActivity.class);
+        Intent tbPage = new Intent(this, TestToolbar.class);
 
-        // Got to Chat Activity
+        // Add chat activity button - Go to Chat Activity
         Button toNextActivity = findViewById(R.id.v2chatButton);
         toNextActivity.setOnClickListener(click  -> startActivity( nextPage));
 
-        // Add weather button - Got to Weather Activity
+        // Add weather button - Go to Weather Activity
         Button wxButton = (Button)findViewById(R.id.weatherButton);
         wxButton.setOnClickListener(click -> startActivity(wxPage));
+
+        // Add Toolbar button - Go to Toolbar Activity
+        Button tbButton = (Button)findViewById(R.id.toolbarButton);
+        tbButton.setOnClickListener(click -> startActivityForResult(tbPage, 1));
     }
 
     private void dispatchTakePictureIntent() {
@@ -100,6 +105,11 @@ public class ProfileActivity extends AppCompatActivity {
         }
 
         Log.e(ACTIVITY_NAME,"In function: OnActivityResult()" );
+
+        // return result from toolbar
+        if (resultCode == 500){
+            finish();
+        }
     }
 
 }
