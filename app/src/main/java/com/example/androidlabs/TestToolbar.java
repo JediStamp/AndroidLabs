@@ -28,6 +28,7 @@ public class TestToolbar extends AppCompatActivity implements NavigationView.OnN
         // Initialize ToolBar
         Toolbar myToolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar); //this is the one it says to use in module
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         //Initialize Drawer
         DrawerLayout myDrawer = (DrawerLayout)findViewById(R.id.drawer);

@@ -29,7 +29,6 @@
         android:title="Overflow"
         android:id="@+id/item4"
         android:icon="@drawable/cookie"
-        android:orderInCategory="4"
         app:showAsAction="never"
         />
 

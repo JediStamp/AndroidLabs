@@ -5,15 +5,18 @@
     <item
         android:title="Chat Page"
         android:id="@+id/itemChat"
+        android:icon="@drawable/chat"
         />
 
     <item
         android:title="Weather Forecast"
         android:id="@+id/itemWeather"
+        android:icon="@drawable/sun"
         />
 
     <item
         android:title="Go Back to Login"
         android:id="@+id/itemLogin"
+        android:icon="@drawable/user"
         />
 </menu>
