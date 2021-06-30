@@ -36,7 +36,6 @@
     <string name="no">No</string>
     <string name="goToWeather">Go To Weather</string>
     <string name="wxIco">none</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="frag_msg">Message Here</string>
     <string name="frag_ID">ID=</string>

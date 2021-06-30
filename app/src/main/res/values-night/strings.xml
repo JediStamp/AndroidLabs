@@ -45,4 +45,6 @@
     <string name="msgBatman">You clicked on item 2, Batman is on his way!!</string>
     <string name="msgFlash">You clicked on item 3, you\'re fast.</string>
     <string name="msgOverflow">You clicked on the overflow menu. You found the hidden item.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

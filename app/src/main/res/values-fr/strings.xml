@@ -36,6 +36,8 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="goToWeather">La Météo</string>
+    <string name="wxIco">rien</string>
+    <string name="hello_blank_fragment">Bonjour blank fragment</string>
     <string name="frag_msg">Message Ici</string>
     <string name="frag_ID">ID=</string>
     <string name="frag_isSend">est un message envoyer</string>
@@ -45,4 +47,6 @@
     <string name="msgBatman">You clicked on item 2, Batman is on his way!!</string>
     <string name="msgFlash">You clicked on item 3, you\'re fast.</string>
     <string name="msgOverflow">You clicked on the overflow menu. You found the hidden item.</string>
+    <string name="open">Ouvert</string>
+    <string name="close">Fermer</string>
 </resources>

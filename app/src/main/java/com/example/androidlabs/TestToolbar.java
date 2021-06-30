@@ -15,7 +15,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-//import android.widget.Toolbar;
 
 public class TestToolbar extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -26,32 +25,34 @@ public class TestToolbar extends AppCompatActivity implements NavigationView.OnN
         setContentView(R.layout.activity_test_toolbar);
 
         // Initialize ToolBar
-        Toolbar myToolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(myToolbar); //this is the one it says to use in module
+        Toolbar myToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        //Initialize Drawer
-        DrawerLayout myDrawer = (DrawerLayout)findViewById(R.id.drawer);
+        // Initialize Drawer
+        DrawerLayout myDrawer = findViewById(R.id.drawer);
         ActionBarDrawerToggle myDToggle;
         myDToggle = new ActionBarDrawerToggle(this, myDrawer, myToolbar, R.string.open, R.string.close);
 
+        // Add Drawer Listener
         myDrawer.addDrawerListener(myDToggle);
         myDToggle.syncState();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
-        NavigationView navView = (NavigationView)findViewById(R.id.navView);
+        // Initialize Navigation View
+        NavigationView navView = findViewById(R.id.navView);
         navView.setNavigationItemSelectedListener(this);
     }
 
     @Override
+    // Inflate the toolbar with the action items
     public boolean onCreateOptionsMenu(Menu menu) {
-//        return super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.sample_menu, menu);
         return true;
     }
 
     @Override
+    // Toolbar menu item actions
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         String msg = "";
         switch (item.getItemId()){
@@ -68,14 +69,13 @@ public class TestToolbar extends AppCompatActivity implements NavigationView.OnN
                 msg = getString(R.string.msgOverflow);
                 break;
         }
-//    if (!msg.equals("")) {
-        Toast.makeText(TestToolbar.this, msg, Toast.LENGTH_LONG).show();
-//    }
 
+        Toast.makeText(TestToolbar.this, msg, Toast.LENGTH_LONG).show();
         return super.onOptionsItemSelected(item);
     }
 
     @Override
+    // NavView item actions
     public boolean onNavigationItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.itemChat:
@@ -91,7 +91,8 @@ public class TestToolbar extends AppCompatActivity implements NavigationView.OnN
                 finish();
                 break;
         }
-        DrawerLayout myDrawer = (DrawerLayout)findViewById(R.id.drawer);
+
+        DrawerLayout myDrawer = findViewById(R.id.drawer);
         myDrawer.closeDrawer(GravityCompat.START);
         return false;
     }
