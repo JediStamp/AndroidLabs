@@ -1,5 +1,5 @@
 # AndroidLabs
 
-Lab 1
+Labs 1 - 8 for Mobile Programming
 
-Student Number: 040919025
+
